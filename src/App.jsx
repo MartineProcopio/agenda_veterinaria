@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header'
 import Formulario from './components/formulario'
+import ListadoPacientes from './components/listadoPacientes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,11 @@ function App() {
   return (
     <>
       <Header/>
-      <Formulario/>
+      <div className="mt-20 md:flex"> 
+       <Formulario />
+        <ListadoPacientes />
+      </div>
+    
     </>
   )
 }

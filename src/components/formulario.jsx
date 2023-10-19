@@ -4,7 +4,7 @@ const Formulario = () => {
        
         <h2 className="font-black text-3xl text-center">Seguimiento de Pacientes</h2>
         <p className="text-lg mt-5 text-center mb-10">Añade Pacientes y {''} 
-          <span className="text-indigo-600 font-bold ">Administralos</span>
+          <span className="text-green-700 font-bold ">Administralos</span>
         </p>
 
           <from className="bg-white ">
@@ -51,7 +51,7 @@ const Formulario = () => {
             <input
               id="alta"
               type="submit" 
-              className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors"
+              className="bg-green-700 w-full p-3 text-white uppercase font-bold hover:bg-green-800 cursor-pointer transition-colors"
               value="Agregar Paciente"
               />
           </from>
