@@ -1,4 +1,5 @@
-import { useState } from 'react'
+
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,17 +8,21 @@ import Formulario from './components/formulario'
 import ListadoPacientes from './components/listadoPacientes'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [pacientes, setPacientes] = useState([]); //cargando props para importarlos en formulario
 
   return (
-    <>
-      <Header/>
-      <div className="mt-20 md:flex"> 
-       <Formulario />
-        <ListadoPacientes />
+    <div className=''>
+      <Header className=""/>
+      <div className="m-0 mt-32 md:flex"> 
+       <Formulario 
+                pacientes={pacientes}
+                setPacientes={setPacientes}/>
+        <ListadoPacientes 
+                 pacientes={pacientes}
+                 setPacientes={setPacientes}/>
       </div>
     
-    </>
+    </div>
   )
 }
 

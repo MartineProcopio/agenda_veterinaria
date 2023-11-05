@@ -1,10 +1,32 @@
+import React from "react";
+
+
+import Logo from '../assets/logo.png'
+
 function Header() {
     return (
-        <h1 className="font-black text-5xl text-center md:w-2/3 mx-auto">
-            Seguimiento Pacientes {""} 
-            <span className="text-green-700">Veterinaria</span>
-        </h1>
+        <div className="bg-green-700 h-20  ">
+        
+        <h1 className="flex text-center object-left">
+        <img
+          src={Logo}
+          alt="Logo"
+          width={350}
+          height={400}
+          className=" rounded-full object-left"
+          
+          />
+          </h1>
+          
+
+        </div>
+
+    
+      
     )
   }
   
   export default Header;
+
+  
+    
