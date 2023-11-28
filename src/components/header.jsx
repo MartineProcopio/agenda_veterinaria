@@ -1,32 +1,20 @@
-import React from "react";
+import logo from '../assets/logo.png'
 
 
-import Logo from '../assets/logo.png'
 
 function Header() {
-    return (
-        <div className="bg-green-700 h-20  ">
-        
-        <h1 className="flex text-center object-left">
-        <img
-          src={Logo}
-          alt="Logo"
-          width={350}
-          height={400}
-          className=" rounded-full object-left"
-          
-          />
-          </h1>
-          
+  return (
+    <div className="bg-green-700 h-10">
 
-        </div>
+      <img
+        src={logo}
+        height={135}
+        width={430}
+        className="rounded-full md:ml-20"/>
+      {"    "}
+    </div>
+  )
+}
 
-    
-      
-    )
-  }
-  
-  export default Header;
-
-  
+export default Header;
     
